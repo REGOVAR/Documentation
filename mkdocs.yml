@@ -28,10 +28,10 @@ nav:
     - 'Filtrage': 'tutorials/filtering.md'
     - 'Pipeline': 'tutorials/pipeline.md'
     - 'Autres': 'tutorials/global.md'
-- 'LE PROJET':
+ - 'LE PROJET':
     - 'Organisation': 'project/organisation.md'
     - 'Historique': 'project/history.md'
-- 'SPECIFICATIONS':
+ - 'SPECIFICATIONS':
     - 'Besoins': 'specs/uses_cases.md'
     - 'Spécification fonctionnelles': 'specs/functionals.md'
     - 'Architecture': 'specs/architecture.md'
