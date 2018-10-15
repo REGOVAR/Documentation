@@ -72,12 +72,7 @@ Ci-dessous la liste des paramètres du fichier de configuration Python du serveu
 Très simple, il suffit de lancer la commande `make update_hpo`, et le script s'occupera pour vous de récupérer la dernière version de la base de donnée HPO et d'enregistrer ces données dans la base de données de Regovar. Les données HPO sont mises à jours environ tous les mois.
 
 
-## Client
-
-Todo
-
-
-## Client (admin)
+## Client Web
 
 Todo
 
