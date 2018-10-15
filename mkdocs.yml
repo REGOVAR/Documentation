@@ -28,7 +28,7 @@ nav:
     - 'Filtrage': 'tutorials/filtering.md'
     - 'Pipeline': 'tutorials/pipeline.md'
     - 'Autres': 'tutorials/global.md'
- - 'LE PROJET':
+- 'LE PROJET':
     - 'Organisation' : 'project/organisation.md'
     - 'Historique' : 'project/history.md'
 - 'SPECIFICATIONS':
