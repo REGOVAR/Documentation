@@ -16,6 +16,7 @@ nav:
  - 'INSTALLATION':
     - 'Avec Docker (Test/Dev)': 'installation/docker.md'
     - 'Avec Saltstack (Production)': 'installation/saltstack.md'
+    - 'Client lourd': 'obsolete/installation_qregovar.md'
     - 'Configuration': 'installation/configuration.md'
     - 'Maintenance': 'installation/maintenance.md'
  - 'UTILISATION': 
