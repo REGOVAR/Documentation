@@ -1,43 +1,4 @@
-
-# Installation du serveur Regovar
-
-À terme, Regovar pourra être installé via un paquet .deb. À l'heure actuelle, deux modes de déploiement pour le serveur sont proposés :
- - directement sur le serveur (installation et configuration automatisées via SaltStack) ;
- - via Docker où Regovar est lui-même encapsulé dans un conteneur.
-La première méthode est prévue pour un déploiement et une utilisation de Regovar sur une machine dédiée, tandis que la seconde permet une installation rapide et simple sans impact sur la configuration de la machine hôte.
-
-### Via SaltStack
-
-Référez-vous au [README](https://github.com/REGOVAR/ServerConfiguration/blob/master/README.md) de la configuration utilisée pour le déploiement au CHU d'Angers et de Nancy.
-
-Une fois le serveur installé, vous pouvez:
-
- * démarrer Regovar :
-```sh
-sudo systemctl start regovar
-```
-
- * l'arrêter :
-```sh
-sudo systemctl stop regovar
-```
-
- * faire en sorte qu'il se lance au démarrage du serveur :
-```sh
-sudo systemctl enable regovar
-```
-
- * vérifier s'il est bien démarré et depuis combien de temps :
-```sh
-sudo systemctl status regovar
-```
-
- * lire son journal :
-```sh
-sudo journalctl -u regovar
-```
-
-### Via Docker
+# Installation avec Docker
 
 La procédure reste relativement simple grâce à un script `install.sh` qui va vous poser quelques questions afin de configurer et créer pour vous les conteneurs docker, le proxy nginx et l'application regovar.  
 
