@@ -1,8 +1,17 @@
 # Installation avec Docker
 
+
+L'installation avec Docker est recommandé pour ceux qui souhaitent juste tester Regovar ainsi que pour ceux qui souhaite développer dessus. C'est une installation simple et rapide qui peut être désinstallé tout aussi facilement, le tout sans risque de corrompre le système d'exploitation de la machine hôte.
+
+Attention cependant (surtout si vous faites cette installation dans une VM), Regovar va très vite demander beaucoup d'espace disque. On estime qu'il faut au minimum 50Go pour pouvoir le tester sereinement. Les causes principales de cette gourmandise sont les suivantes :
+  - tailles des fichiers bioinformatiques (bam, vcf, ...)
+  - taille des bases de données "locales" utilisées par les pipelines d'annotation 
+  - taille de la base de donnée lors de l'analyse
+  - taille des images docker des pipelines installé
+
 La procédure reste relativement simple grâce à un script `install.sh` qui va vous poser quelques questions afin de configurer et créer pour vous les conteneurs docker, le proxy nginx et l'application regovar.  
 
-####Pré-requis
+#### Pré-requis
 
  * Ubuntu 16.04 LTS (Xenial), Ubuntu 18.04 LTS (Bionic) ou Debian 9 (Stretch) ou supérieur
  * Droits root sur le serveur
@@ -18,7 +27,7 @@ sudo usermod -a -G docker $USER
 
 N'oubliez pas de vous déconnecter de la session en cours et de vous reconnecter pour que l'ajout au groupe soit pris en compte.
 
-####Procédure
+#### Procédure
 
 ```sh
 git clone https://github.com/REGOVAR/Regovar.git
@@ -35,7 +44,7 @@ make update_panels
 make start
 ```
 
-####Check final
+#### Check final
 
 Si vous laissez tous les choix par défaut, à la fin de l'installation vous pourrez voir deux conteneurs dans docker.
 ```
