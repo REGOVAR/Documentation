@@ -21,6 +21,10 @@ Angular est un cadriciel coté client open source basé sur TypeScript dirigée 
 ### Vue
 Vue.js est un framework JavaScript open-source pour la construction d'interfaces utilisateur. L'intégration dans des projets utilisant d'autres bibliothèques JavaScript est simplifiée avec Vue car elle est conçue pour être adoptée de manière incrémentielle
 
+### Remarques
+
+Un truc cool, c'est que quelque soit le framework utilisé, si on ne fait pas trop des trucs exotiques avec JS-HTML-CSS, le code sera compatible avec [Electron](https://github.com/maximegris/angular-electron), ce qui permet de convertir l'application web en application Desktop pour Linux/Max/Windows... Donc c'est plutôt cool :)
+
 
 ## Discussion
 
@@ -70,7 +74,6 @@ Si on met de côté les envies et les "choix du coeurs", les seuls expériences 
 * Une architecture éprouvé
 * Un moteur de DI (injection de dépendances)
 * Une bonne documentation
-* Possibilité de convertir l'application web Angular en application Desktop pour Linux/Max/Windows avec [Electron](https://github.com/maximegris/angular-electron)
 
 **Les moins**
 * La syntaxe complexe qui vient de l'usage de TypeScript.
@@ -105,9 +108,10 @@ Si on met de côté les envies et les "choix du coeurs", les seuls expériences 
 * Intégration impressionnante. Vue.js peut être utilisé à la fois pour la création d'applications d'une page et pour les interfaces Web d'applications plus difficiles. L'essentiel est que des composants interactifs plus petits puissent être facilement intégrés à l'infrastructure existante sans aucun impact négatif sur l'ensemble du système.
 * Grande échelle. Vue.js peut aider à développer de très grands modèles réutilisables qui peuvent être créés sans temps supplémentaire, selon sa structure simple.
 * Petite taille. Vue.js peut peser environ 20 Ko, tout en conservant sa vitesse et sa flexibilité, ce qui lui permet d’atteindre de bien meilleures performances que d’autres cadres.
+* Popularité galopante. Tout le monde en parle, il est beau, il est intelligent, il est jeune, et gna gna gna.... bref, le gars énervant quoi.
 
 **Les moins**
-* Manque de ressources. Vue.js a toujours une part de marché relativement petite par rapport à React ou Angular, ce qui signifie que le partage des connaissances dans ce cadre en est encore à ses débuts.
+* Manque de ressources. Vue.js a toujours une part de marché relativement petite par rapport à React ou Angular, ce qui signifie que le partage des connaissances dans ce cadre en est encore à ses débuts. Cependant, la communauté est bien organisé et ce retards vis à vis de ses concurrent se réduit vite, notamment grâce à des dépôts comme [awesome-vue](https://github.com/vuejs/awesome-vue).
 * Risque de trop de flexibilité. Parfois, Vue.js pouvait rencontrer des problèmes lors de l’intégration dans des gros projets et il n’existait pas encore de solutions possibles, mais ces solutions viendront très bientôt.
 * Manque de documentation complète (en anglais). Cela conduit à une complexité partielle à certains stades de développement, néanmoins, de plus en plus de documents sont traduits en anglais.
 
@@ -115,9 +119,9 @@ Si on met de côté les envies et les "choix du coeurs", les seuls expériences 
 
 ### Outillage (dev/debug)
 Angular arrive avec des outils de débuggage et de test déjà en place, mais les autres peuvent aussi les utiliser. Donc de ce point de vue, tous sont à la même enseigne. 
-* Des outils dans le navigateur web pour le débuggage dynmique au runtime;
+* Des outils dans le navigateur web pour le débuggage dynamique au runtime;
 * Des outils de packaging du code pour compresser l'application et accelérer sont déploiement sur les navigateurs web;
-* Des outils de tests automatique comme selenium.
+* Des outils de tests automatique comme selenium ou [cypress](https://www.cypress.io/).
 
 
 ## Conclusion
@@ -128,7 +132,7 @@ Au vu des points discutés précédemment, on peut dresser le tableau suivant. L
 | Fait | React | Angular | Vue |
 | ---- | ----- | ------- | --- |
 | Libre et Open-source | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Usage/popularité sur le web (Communauté) | :star: :star: | :star: :star: :star: | :star: |
+| Usage/popularité sur le web (Communauté) | :star: | :star: :star: :star: | :star: :star: |
 | Usage en production | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Simplicité d'usage | :star: :star: | :star: | :star: :star: :star: |
 | Courant dans les projets "bio-info" (échelle nationale) | :star: :star: | :star: :star: :star: | :star: |
@@ -138,7 +142,7 @@ Au vu des points discutés précédemment, on peut dresser le tableau suivant. L
 
 |      | React | Angular | Vue |
 | ---- | ----- | ------- | --- |
-| **Total** | 10 | 12 | 8 |
+| **Total** | 9 | 12 | 9 |
 
 Bien que très séduisant et prometteur, **Vue** souffre d'être le petit dernier arrivé. Sa communauté est moins grande, les projets moins nombreux et donc l'aide potentiel moins grande.
 
@@ -146,5 +150,5 @@ Bien que très séduisant et prometteur, **Vue** souffre d'être le petit dernie
 
 **Angular** est le plus gros et le plus complexe à prendre en main des 3 frameworks, mais il permet de tout faire, et sa popularité en fait d'office une référence auprès des bioinformaticiens. De fait, Angular est le plus souvent cité dans les offres d'emploi ou les papiers en bioinformatique.
 
-CHOIX FINAL : Angular
+CHOIX FINAL : Angular ou Vue ... :s
 
