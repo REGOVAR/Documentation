@@ -55,14 +55,14 @@ En gris sont représentés les systèmes dit "coopérants". Il s'agit de composa
 
 ### Interfaces (IF_)
 En bleu sont représentées les interfaces. Elles sont là afin de définir un protocole d'échange entre plusieurs Sous-systèmes et/ou Systèmes coopérants. A noter que lorsque le liens entre une interface et un sous-système est vert, celà signifie que c'est ce sous-système qui implémente et expose cette interface.
- * **IF_ORCHESTRATION** : 
- * **IF_PIPELINE_ORCHESTRATION** : 
- * **IF_LOGS** : 
- * **IF_LOGS_EXPORT** : 
- * **IF_USER_DIRECTORY** : 
- * **IF_SHARING** : 
- * **IF_MAIL** : 
- * **IF_MONITORING** : 
+ * **IF_ORCHESTRATION** : l'interface principale en REST qui permet d'accéder de façon programmatique à l'ensemble des services de Regovar;
+ * **IF_PIPELINE_ORCHESTRATION** : cette interface spécifie la façon de travailler avec les pipelines quelques soit la technologie utilisé. Dans un premier temps c'est la technologie Docker qui va être implémenté pour gérer les pipelines, mais ensuite d'autres technologies seront proposés comme Synergie par exemple;
+ * **IF_LOGS** : l'interface via laquelle l'ensemble des logs des différents composant de Regovar seront collectés. C'est aussi via cette interface qu'il sera possible de les rediriger vers des collecteurs de données tierces en fonctions des besoins de supervision de l'organisation qui utilise Regovar;
+ * **IF_LOGS_EXPORT** : API REST qui permet de récupérer un sous ensemble des logs collecté via des requêtes et des filtres;
+ * **IF_USER_DIRECTORY** : cette interface permet à Regovar de se connecter à un annuaire LDAP afin de récupérer les utilisateurs et de pouvoir les authentifier. Cette interface est optionnel, si elle n'est pas utilisée, Regovar gérera alors lui-même les utilisateurs;
+ * **IF_SHARING** : l'interface exposée par le serveur de partage de donnée de Regovar;
+ * **IF_MAIL** : cette interface permet de relier le serveur Regovar à un serveur mail (IMAP) et ainsi d'envoyer des mails;
+ * **IF_MONITORING** : cette interface permet d'envoyer à Regovar des informations de monitoring afin que celle-ci soit directement visible par les utilisateurs de Regovar.
  
 ### Relations entre les composants
 
